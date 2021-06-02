@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+<title>Validation Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="index.js"></script>
+  <link href="stylelab.css" rel="stylesheet">
+</head>
+<body>
+ <form class="form" name="myForm" method ="post" >
+        <br><br>
+        <div class="card">
+        <div class="card-header bg-dark">
+        <h1 class="text-white text-center ">Java Script Validation Form</h1>
+        </div>
+        <br>
+        <div class="text-center">
+        <label class="m-auto"> Name<span style="font-weight: bolder;">*</span> </label>
+        <input class="form-control m-auto" type="Name" name="fname" placeholder="Name" required > <br>
+<div class="text-center">
+        <label class="m-auto"> Favorite Color <span style="font-weight: bolder;">*</span> </label>
+        <input  class="form-control m-auto" type="Color" name="fcolor" placeholder="Color" required > <br>
+        </div>
+        <div class="text-center">
+        <label class="m-auto">Blog URL <span style="font-weight: bolder;">*</span> </label>
+        <input class="form-control m-auto" type="url" name="burl" placeholder="Blog URL"required > <br>
+        </div>
+        <div class="text-center">
+        <label class="m-auto ">Age <span style="font-weight: bolder;">*</span></label>
+        <input class="form-control m-auto" type="number" name="age" placeholder="Age Between 15-70" min="15" max="70" required > <br>
+        </div>
+        <div class="text-center">
+        <label class="m-auto">Password <span style="font-weight: bolder;">*</span></label>  
+        <input class="form-control m-auto" type="password" placeholder="Password" name="password"required >
+        </div>
+        <div class="text-center">
+        <label class="m-auto ">CNIC <span style="font-weight: bolder;">*</span></label>
+        <input class="form-control m-auto" id="txtData1" type="textnum" name="CNIC" maxlength="15" placeholder="xxxxx-xxxxxxx-x"required > <br>
+        </div>
+        <div class="text-center">
+        <label class="m-auto">Phone Number <span style="font-weight: bolder;">*</span></label>
+        <input class="form-control m-auto" type="tel" name="pnum" placeholder="92xxxxxxxxxx" maxlength="12" required > <br>
+        </div>
+        <div class="text-center">
+        <button class="btn btn-success m-auto button" type="submit" name="done" onclick="validateFormname();validateFormphone();validateFormcnic();validateFormpass();"> Submit </button>
+        </div><br><br>
+        </div>
+        </form>
+</body>
+</html>
